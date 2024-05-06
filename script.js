@@ -5,6 +5,7 @@ function Play() {
     let computerChoice = getComputerChoice();
     console.log("Player chose:", playerChoice);
     console.log("Computer chose:", computerChoice);
+    documen.getElementById("Computer Chose").textContent= computerChoice;
     WhoWin(playerChoice, computerChoice);
     
     console.log("Player Score:", humanScore);
