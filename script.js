@@ -11,10 +11,16 @@ function Play() {
     console.log("Computer Score:", computerScore);
     document.getElementById("humanScore").textContent = humanScore;
     document.getElementById("computerScore").textContent = computerScore;
-
+    function finish(delay){
     if (humanScore === 3 || computerScore === 3) {
         console.log("Game finished");
-            }         
+        setTimeout(function(){
+            location.reload();}
+            ,delay) ;
+        }
+        }  
+           finish(5000);
+    }       
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -50,6 +56,6 @@ function WhoWin(playerChoice, computerChoice) {
         console.log("You lose!");
     }
 }
-}
+
 const button = document.getElementById("Play");
 button.addEventListener("click",Play);
