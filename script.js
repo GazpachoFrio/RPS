@@ -49,5 +49,5 @@ function WhoWin(playerChoice, computerChoice) {
     }
 }
 }
-const button = document.getElementById("Play Rock, paper, scissors");
-button.addEventListener("Click",Play());
+const button = document.getElementById("Play");
+button.addEventListener("click",Play);
