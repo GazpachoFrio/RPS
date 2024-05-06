@@ -1,66 +1,59 @@
-console.log("Heya")
-function Playerchoice(){
-    let HumanChoice = prompt("Choose Wisely")
-    if (HumanChoice.charAt() === "Scissors"){
-        alert("Scissors!");
-        }
-    else if (HumanChoice === "Rock"){
-        alert("Rock!");
-    }
-    else if (HumanChoice === "Paper"){
-        alert("Paper!");
-    }
-    else if (HumanChoice !== "Paper" && HumanChoice !== "Rock" && HumanChoice !== "Scissors"){
-        alert("Learn to use a Keyboard first!")
-    }
-        
-} 
+let humanScore = 0;
+let computerScore = 0;
 
-
+function Playerchoice() {
+    let HumanChoice = prompt("Choose Wisely");
+    return HumanChoice;
+}
 
 function getRandomInt(max) {
-    return Math.floor(Math.random()*max);
- }
- function getComputerChoice(){
-   let PCChoice = getRandomInt(3);
+    return Math.floor(Math.random() * max);
+}
+
+function getComputerChoice() {
+    let PCChoice = getRandomInt(3);
     if (PCChoice === 2) {
         return "Scissors";
-    } 
-    else if (PCChoice === 1) {
+    } else if (PCChoice === 1) {
         return "Rock";
-    }
-    else if (PCChoice ===0) {
+    } else {
         return "Paper";
     }
-   
- } 
- console.log("Elijo...", getComputerChoice() )
- let humanScore = Number (0);
- let computerScore; Number (0);
-  
+}
 
- function Play(){
-    WhoWin(Playerchoice,getComputerChoice)
+function WhoWin(playerChoice, computerChoice) {
+    if (playerChoice === "Paper" && computerChoice === "Rock") {
+        humanScore++;
+        console.log("You win! Paper beats Rock");
+    } else if (playerChoice === "Scissors" && computerChoice === "Paper") {
+        humanScore++;
+        console.log("You win! Scissors beats Paper");
+    } else if (playerChoice === "Rock" && computerChoice === "Scissors") {
+        humanScore++;
+        console.log("You win! Rock beats Scissors");
+    } else if (playerChoice === computerChoice) {
+        console.log("It's a tie!");
+    } else {
+        computerScore++;
+        console.log("You lose!");
+    }
+}
+
+function Play() {
+    let playerChoice = Playerchoice();
+    let computerChoice = getComputerChoice();
+    console.log("Player chose:", playerChoice);
+    console.log("Computer chose:", computerChoice);
+    WhoWin(playerChoice, computerChoice);
+    
+    console.log("Player Score:", humanScore);
+    console.log("Computer Score:", computerScore);
+
     if (humanScore === 3 || computerScore === 3) {
-    return console.log("Game finish");}
- function WhoWin(){
-    if (getComputerChoice === 1 && Playerchoice === "Paper"){
-        return (humanScore +1, "You win! Paper beat Rock");
+        console.log("Game finished");
+        // Puedes reiniciar los puntajes aquí si quieres volver a jugar
     }
-    else if (getComputerChoice === 2 && Playerchoice === "Paper"){
-        return (computerScore +1, "You Lose! Scissors beat Paper");
-    }
-    else if (getComputerChoice === 0 && Playerchoice === "Rock"){
-        return(computerScore +1, "You Lose! Paper beat Rock");
-    }
-    else if (getComputerChoice === 1 && Playerchoice === "Scissors"){
-        return (computerScore +1, "You Lose! Scissors beat Paper");
-    }
-    else if (getComputerChoice === 2 && Playerchoice === "Rock"){
-        return (humanScore +1, "You win! Rock beat Scissors");
-    }
-    else if (getComputerChoice === 0 && Playerchoice === "Scissors"){
-        return (humanScore +1, "You win! Scissors beat Paper");
-    }
- }
- }
+}
+
+// Llamamos a la función Play para iniciar el juego
+Play();
