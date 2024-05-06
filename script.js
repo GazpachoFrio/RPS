@@ -38,8 +38,13 @@ function getRandomInt(max) {
  console.log (getRandomInt(3))
  console.log("Elijo...", getComputerChoice() )
  let humanScore = Number (0);
- let computerScore; Number (0)
+ let computerScore; Number (0);
+  
 
+ function Play(){
+    WhoWin(Playerchoice,getComputerChoice)
+    if (humanScore === 3 || computerScore === 3) {
+    return "Game finish";}
  function WhoWin(){
     if (getComputerChoice === 1 && Playerchoice === "Paper"){
         return (humanScore +1, "You win! Paper beat Rock");
@@ -59,4 +64,5 @@ function getRandomInt(max) {
     else if (getComputerChoice === 0 && Playerchoice === "Scissors"){
         return (humanScore +1, "You win! Scissors beat Paper");
     }
+ }
  }
