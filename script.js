@@ -1,5 +1,25 @@
 console.log("Heya")
- function getRandomInt(max) {
+function Playerchoice(){
+    let HumanChoice = prompt("Choose Wisely")
+    if (HumanChoice.charAt() === "Scissors"){
+        alert("Scissors!");
+        }
+    else if (HumanChoice.charAt() === "Rock"){
+        alert("Rock!");
+    }
+    else if (HumanChoice.charAt() === "Paper"){
+        alert("Paper!");
+    }
+    else if (HumanChoice.charAt() !== "Paper" && HumanChoice.charAt !== "Rock" && HumanChoice.charAt !== "Scissors"){
+        alert("Learn to use a Keyboard first!")
+    }
+        
+} 
+console.log(Playerchoice())
+
+
+
+function getRandomInt(max) {
     return Math.floor(Math.random()*max);
  }
  function getComputerChoice(){
