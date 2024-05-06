@@ -37,3 +37,26 @@ function getRandomInt(max) {
  } 
  console.log (getRandomInt(3))
  console.log("Elijo...", getComputerChoice() )
+ let humanScore = Number (0);
+ let computerScore; Number (0)
+
+ function WhoWin(){
+    if (getComputerChoice === 1 && Playerchoice === "Paper"){
+        return (humanScore +1, "You win! Paper beat Rock");
+    }
+    else if (getComputerChoice === 2 && Playerchoice === "Paper"){
+        return (computerScore +1, "You Lose! Scissors beat Paper");
+    }
+    else if (getComputerChoice === 0 && Playerchoice === "Rock"){
+        return(computerScore +1, "You Lose! Paper beat Rock");
+    }
+    else if (getComputerChoice === 1 && Playerchoice === "Scissors"){
+        return (computerScore +1, "You Lose! Scissors beat Paper");
+    }
+    else if (getComputerChoice === 2 && Playerchoice === "Rock"){
+        return (humanScore +1, "You win! Rock beat Scissors");
+    }
+    else if (getComputerChoice === 0 && Playerchoice === "Scissors"){
+        return (humanScore +1, "You win! Scissors beat Paper");
+    }
+ }
