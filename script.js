@@ -1,7 +1,7 @@
 console.log("Heya")
 
  function getComputerChoice(){
-   let getRandomInt(3);
+   getComputerChoice = getRandomInt(3);
     if (getRandomInt === 2) {
         return "Scissors";
     } 
