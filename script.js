@@ -1,6 +1,7 @@
 console.log("Heya")
 
- let getComputerChoice = getRandomInt(3);
+ function getComputerChoice(){
+   let getRandomInt(3);
     if (getRandomInt === 2) {
         return "Scissors";
     } 
@@ -11,5 +12,4 @@ console.log("Heya")
         return "Paper";
     }
     console.log("Elijo...", getComputerChoice )
- 
- 
+ }
