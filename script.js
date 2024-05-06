@@ -15,7 +15,6 @@ function Playerchoice(){
     }
         
 } 
-console.log(Playerchoice())
 
 
 
@@ -35,7 +34,6 @@ function getRandomInt(max) {
     }
    
  } 
- console.log (getRandomInt(3))
  console.log("Elijo...", getComputerChoice() )
  let humanScore = Number (0);
  let computerScore; Number (0);
@@ -44,7 +42,7 @@ function getRandomInt(max) {
  function Play(){
     WhoWin(Playerchoice,getComputerChoice)
     if (humanScore === 3 || computerScore === 3) {
-    return "Game finish";}
+    return console.log("Game finish");}
  function WhoWin(){
     if (getComputerChoice === 1 && Playerchoice === "Paper"){
         return (humanScore +1, "You win! Paper beat Rock");
