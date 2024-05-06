@@ -13,4 +13,5 @@ console.log("Heya")
     }
    
  } 
+ console.log (PCChoice)
  console.log("Elijo...", getComputerChoice )
