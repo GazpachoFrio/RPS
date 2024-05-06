@@ -10,6 +10,6 @@ console.log("Heya")
     else if (getRandomInt ===0) {
         return "Paper"
     }
-    
+    console.log("Elijo...", getComputerChoice )
  
  
