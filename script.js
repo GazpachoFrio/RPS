@@ -61,3 +61,5 @@ function WhoWin(playerChoice, computerChoice) {
 
 const button = document.getElementById("Play");
 button.addEventListener("click",Play);
+const Playagain = document.getElementById("Playagain");
+button.addEventListener("click",Play)
