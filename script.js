@@ -11,8 +11,7 @@ console.log("Heya")
     else if (PCChoice ===0) {
         return "Paper";
     }
-   console.log("Elijo...", getComputerChoice ) 
-   console.log (PCChoice)
+   
  } 
-
- 
+ console.log (getRandomInt(3))
+ console.log("Elijo...", getComputerChoice )
