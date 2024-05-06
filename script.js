@@ -9,6 +9,8 @@ function Play() {
     
     console.log("Player Score:", humanScore);
     console.log("Computer Score:", computerScore);
+    document.getElementById("humanScore").textContent = humanScore;
+    document.getElementById("computerScore").textContent = computerScore;
 
     if (humanScore === 3 || computerScore === 3) {
         console.log("Game finished");
