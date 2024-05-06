@@ -11,7 +11,8 @@ console.log("Heya")
     else if (PCChoice ===0) {
         return "Paper";
     }
-   
+   console.log("Elijo...", getComputerChoice ) 
+   console.log (PCChoice)
  } 
- console.log (PCChoice)
- console.log("Elijo...", getComputerChoice )
+
+ 
