@@ -58,10 +58,11 @@ function WhoWin(playerChoice, computerChoice) {
         console.log("You lose!");
     }
 }
-function buttonClick(Play){
+function buttonClick(){
     console.log("button clicked");
+    Play();
 }
 const button = document.getElementById("Play");
 button.addEventListener("click",buttonClick);
 const Playagain = document.getElementById("Playagain");
-button.addEventListener("click",buttonClick)
+Playagain.addEventListener("click",buttonClick)
