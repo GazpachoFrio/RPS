@@ -4,6 +4,7 @@ function Play() {
     let playerChoice = Playerchoice();
     let computerChoice = getComputerChoice();
     console.log("Player chose:", playerChoice);
+    document.getElementById("HumanChose").textContent= playerChoice;
     console.log("Computer chose:", computerChoice);
     document.getElementById("ComputerChose").textContent= computerChoice;
     WhoWin(playerChoice, computerChoice);
