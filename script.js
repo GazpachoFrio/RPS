@@ -16,4 +16,4 @@ console.log("Heya")
    
  } 
  console.log (getRandomInt(3))
- console.log("Elijo...", getComputerChoice )
+ console.log("Elijo...", getComputerChoice() )
