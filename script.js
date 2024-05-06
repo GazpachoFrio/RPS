@@ -1,14 +1,14 @@
 console.log("Heya")
 
  function getComputerChoice(){
-   getComputerChoice = getRandomInt(3);
-    if (getRandomInt === 2) {
+   let PCChoice = getRandomInt(3);
+    if (PCChoice === 2) {
         return "Scissors";
     } 
-    else if (getRandomInt === 1) {
+    else if (PCChoice === 1) {
         return "Rock";
     }
-    else if (getRandomInt ===0) {
+    else if (PCChoice ===0) {
         return "Paper";
     }
    
