@@ -4,13 +4,13 @@ function Playerchoice(){
     if (HumanChoice.charAt() === "Scissors"){
         alert("Scissors!");
         }
-    else if (HumanChoice.charAt() === "Rock"){
+    else if (HumanChoice === "Rock"){
         alert("Rock!");
     }
-    else if (HumanChoice.charAt() === "Paper"){
+    else if (HumanChoice === "Paper"){
         alert("Paper!");
     }
-    else if (HumanChoice.charAt() !== "Paper" && HumanChoice.charAt !== "Rock" && HumanChoice.charAt !== "Scissors"){
+    else if (HumanChoice !== "Paper" && HumanChoice !== "Rock" && HumanChoice !== "Scissors"){
         alert("Learn to use a Keyboard first!")
     }
         
