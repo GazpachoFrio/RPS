@@ -1,0 +1,8 @@
+*{  color: white;
+    background-color: black;
+}
+button{
+    border: 3px solid;
+    border-radius: 7px;
+    box-shadow: color grey h-offset 10px;
+}
